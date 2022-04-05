@@ -4,5 +4,5 @@
 
 //We don't need to create css file for writing css. We can write actual CSS in js file. We can also pass data via props to Style-component.
 
-
+//we need to install styled components. (npm i styled-components@4.1.3)
 
