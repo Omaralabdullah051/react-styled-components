@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+//In this overall application we don't use any single css file.
+import Countries from './components/Countries/Countries';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import { Container } from './components/styles/Container.styles';
+import GlobalStyle from './components/styles/Global.styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <GlobalStyle></GlobalStyle>
+      <Header></Header>
+      <Countries></Countries>
+      <Footer></Footer>
+    </Container>
   );
 }
 
